@@ -46,12 +46,17 @@ group :development do
   gem 'spring'
 end
 
-group :test do
-  # Adds support for Capybara system testing and selenium driver
-  gem 'capybara', '>= 3.26'
-  gem 'selenium-webdriver'
-  # Easy installation and use of web drivers to run system tests with browsers
-  gem 'webdrivers'
+group :test do 
+ # Adds support for Capybara system testing and selenium driver
+ gem 'capybara',                 '3.35.3'
+ gem 'selenium-webdriver',       '3.142.7'
+ # Easy installation and use of web drivers to run system tests with browsers
+ gem 'webdrivers',               '4.6.0'
+ gem 'rails-controller-testing', '1.0.5'
+ gem 'minitest',                 '5.11.3'
+ gem 'minitest-reporters',       '1.3.8'
+ gem 'guard',                    '2.16.2'
+ gem 'guard-minitest',           '2.4.6'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
